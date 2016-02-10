@@ -137,6 +137,10 @@
                  map.getSource('markers').setData(tempSource._data)
                  map.flyTo({center: lnglat, zoom: 15})
              })
+             
+             map.on('click', function(e) {
+                 mly.moveCloseTo(e.lngLat.lat, e.lngLat.lng);
+             });
         </script>
     </body>
 </html>
