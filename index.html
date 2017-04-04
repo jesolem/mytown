@@ -137,10 +137,11 @@
                  map.getSource('markers').setData(tempSource._data)
                  map.flyTo({center: lnglat, zoom: 15})
              })
-             
+
              map.on('click', function(e) {
                  mly.moveCloseTo(e.lngLat.lat, e.lngLat.lng);
              });
         </script>
+        <a href="https://github.com/jesolem/mytown/blob/gh-pages/index.html">Source code for this example.</a>
     </body>
 </html>
